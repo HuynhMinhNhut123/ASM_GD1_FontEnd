@@ -1,0 +1,52 @@
+
+.carousel-item img {
+    display: block;
+    height: 457px;
+}
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+  .col {
+    line-height: normal;
+  }
+  .font {
+    font-size: large;
+  }
+  .card-text {
+    font-size: small;
+  }
+
+  .icon {
+    font-size: 2.1em;
+    color: #20262E;
+    transition: 0.2s;
+  }
+  form a{
+    margin: 10px;
+  }
+  tr td img {
+    width: 100px;
+  }
+  tr {
+    vertical-align: middle;
+  }
+
+  .cart {
+    position: fixed;
+    width: 385px;
+    padding: 20px;
+  }
+  .td {
+    font-size: xx-large;
+    font-weight: bold;
+  }

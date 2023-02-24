@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="/bootrap5.0/css/bootstrap.min.css">
+    <script src="/bootrap5.0/js/bootstrap.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/input-box.css"> -->
+    <script src="/Angular/angular.min.js"></script>
+    <script src="/js/bill.js"></script>
+    <title>Giỏ Hàng</title>
+    <style>
+.input-box {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .input-box header {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 45px;
+  }
+
+  .input-img-right {
+    margin: 0 auto;
+  }
+  
+  .input-field {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 10px 0 10px;
+  }
+  .input {
+    height: 45px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    margin-bottom: 20px;
+    color: #40414a;
+  }
+  
+  .input-box .input-field label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  .input-field .input:focus~label {
+    top: -10px;
+    font-size: 13px;
+  }
+  
+  .input-field .input:valid~label {
+    top: -10px;
+    font-size: 13px;
+    color: #5d5076;
+  }
+  
+  .input-field .input:focus,
+  .input-field .input:valid {
+    border-bottom: 1px solid #743ae1;
+  }
+  
+.carousel-item img {
+    display: block;
+    height: 457px;
+}
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+  .col {
+    line-height: normal;
+  }
+  .font {
+    font-size: large;
+  }
+  .card-text {
+    font-size: small;
+  }
+
+  .icon {
+    font-size: 2.1em;
+    color: #20262E;
+    transition: 0.2s;
+  }
+  form a{
+    margin: 10px;
+  }
+  tr td img {
+    width: 100px;
+  }
+  tr {
+    vertical-align: middle;
+  }
+
+  .cart {
+    position: fixed;
+    width: 385px;
+    padding: 20px;
+  }
+  .td {
+    font-size: xx-large;
+    font-weight: bold;
+  }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light rounded" aria-label="Twelfth navbar example">
+            <div class="container">
+                <a href="#" class="navbar-brand"><img src="/img/logo2.png" alt="" width="100"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/Sanpham.html">Sản phẩm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Cửa hàng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Giới thiệu</a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="d-flex collapse navbar-collapse" id="navbarsExample10">
+                    <input class="me-2 w-75 rounded-pill form-control" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <a class="icon" href="#"><ion-icon class="nav-icon" name="cart-outline"></ion-icon></a>
+                    <a class="icon" href="/html/SignIn.html"><ion-icon name="person-circle-outline"></ion-icon></a>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main class="bg-light mb-4">
+        <div class="container pt-3">
+            <header class="text-center mb-3">
+                <h1>Quản lý sản phẩm</h1>
+            </header>
+            <article class="pt-3 mb-5">
+                <table class="table text-center">
+                    <thead class="table-active">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Sản Phẩm</th>
+                            <th scope="col">Hình Ảnh</th>
+                            <th scope="col">Kích cỡ</th>
+                            <th scope="col">Giá </th>
+                            <th scope="col">Số Lượng</th>
+                            <th scope="col">Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><input type="checkbox"></th>
+                            <td>Túi Degrey Trân Châu đường đen</td>
+                            <td><img class="img-fluid" src="/img/sp1.jpeg" alt=""></td>
+                            <td>xl</td>
+                            <td>320.000đ</td>
+                            <td class="rounded-pill">
+                                <button class="btn btn-light">+</button>
+                                <input type="text" class="w-25">
+                                <button class="btn btn-light">-</button>
+                            </td>
+                            <td>
+                                <button class="btn btn-secondary">Xóa</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><input type="checkbox"></th>
+                            <td>Balo Degrey Drawstring Backpack</td>
+                            <td><img src="/img/sp2.jpeg" class="img-fluid" alt=""></td>
+                            <td>xxl</td>
+                            <td>290.000đ</td>
+                            <td class="rounded-pill w-25">
+                                <button class="btn btn-light">+</button>
+                                <input type="text" class="w-25">
+                                <button class="btn btn-light">-</button>
+                            </td>
+                            <td>
+                                <button class="btn btn-secondary">Xóa</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><input type="checkbox"></th>
+                            <td>Madmonks Áo khoác Bomber Lông</td>
+                            <td><img src="/img/sp3.jpeg" class="img-fluid" alt=""></td>
+                            <td>xxl</td>
+                            <td>650.000đ</td>
+                            <td class="rounded-pill">
+                                <button class="btn btn-light">+</button>
+                                <input type="text" class="w-25">
+                                <button class="btn btn-light">-</button>
+                            </td>
+                            <td>
+                                <button class="btn btn-secondary">Xóa</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><input type="checkbox"></th>
+                            <td>Quần Dù Túi Hộp Degrey Đen</td>
+                            <td><img src="/img/sp4.jpeg" class="img-fluid" alt=""></td>
+                            <td>xxl</td>
+                            <td>520.000đ</td>
+                            <td class="rounded-pill">
+                                <button class="btn btn-light">+</button>
+                                <input type="text" class="w-25">
+                                <button class="btn btn-light">-</button>
+                            </td>
+                            <td>
+                                <button class="btn btn-secondary">Xóa</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <div class="text-center" ng-app="myapp">
+                <button class="btn btn-primary col-3 mb-3" type="button" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">Đặt hàng</button>
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog" ng-controller="myctrl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title w-100 col-4 text-center" id="exampleModalLabel">Điền thông tin</h5>
+                            </div>
+                            <div class="modal-body">
+                                <div class="input-box">
+                                    <div class="input-field text-center">
+                                        <input type="text" class="input" id="username" ng-model="username" required autocomplete="off">
+                                        <label for="username">Họ Tên</label>
+                                    </div>
+                                    <div class="input-field">
+                                        <input type="text" class="input" id="phone" ng-model="phone" required autocomplete="off">
+                                        <label for="phone">Số điện thoại</label>
+                                    </div>
+                                    <div class="input-field">
+                                        <input type="text" class="input" id="date" ng-model="date" required autocomplete="off">
+                                        <label for="date">Ngày sinh</label>
+                                    </div>
+                                    <div class="input-field">
+                                        <input type="text" class="input" id="Address" ng-model="address" required autocomplete="off">
+                                        <label for="Address">Địa chỉ</label>
+                                    </div>
+                                    <div class="input-field">
+                                        <input type="text" class="input" id="card" ng-model="card" required autocomplete="off">
+                                        <label for="card">Căn cước công dân</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap" ng-click='infor()'>Lưu thông
+                                    tin</button>
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title w-100 text-center" id="exampleModalLabel">Hóa đơn</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div>
+                                                    <label class="d-flex flex-column p-3">
+                                                        <span class="mb-3">{{name}}</span>
+                                                        <span class="mb-3">{{phone}}</span>
+                                                        <span class="mb-3">{{date}}</span>
+                                                        <span class="mb-3">{{address}}</span>
+                                                        <span class="mb-3">{{card}}</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Thanh Toán</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container">
+        <div class="row">
+            <div class="col-12 col-md text-center">
+                <small class="d-block mb-3 text-muted"><img src="/img/logo2.png" alt="" width="200"></small>
+            </div>
+            <div class="col-3 col-md">
+                <h5>Về chúng tôi</h5>
+                <ul class="list-unstyled text-small">
+                    <li>
+                        <span>
+                            Tên shop theo cảm hứng của chủ shop
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3 col-md">
+                <h5>Hỗ trợ khách hàng</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary" href="#">Hệ thống cửa hàng</a></li>
+                    <li><a class="link-secondary" href="#">Hướng dẫn đặt hàng</a></li>
+                    <li><a class="link-secondary" href="#">Chính sách và quy định</a></li>
+                    <li><a class="link-secondary" href="#">Thông tin sở hữu</a></li>
+                </ul>
+            </div>
+            <div class="col-3 col-md">
+                <h5>Chi nhánh</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary" href="#">Sài gòn</a></li>
+                    <li><a class="link-secondary" href="#">Đà lạt</a></li>
+                    <li><a class="link-secondary" href="#">Nha trang </a></li>
+                    <li><a class="link-secondary" href="#">Vũng tàu</a></li>
+                </ul>
+            </div>
+            <div class="col-3 col-md">
+                <h5>Chăm sóc khách hàng</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary" href="#"><ion-icon name="call-outline"></ion-icon> 090501590</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

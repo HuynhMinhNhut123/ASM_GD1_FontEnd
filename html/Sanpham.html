@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Muaport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootrap5.0/css/bootstrap.min.css">
+    <script src="/bootrap5.0/js/bootstrap.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Shop N & T - Sản phẩm</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light rounded" aria-label="Twelfth navbar example">
+            <div class="container">
+                <a href="#" class="navbar-brand"><img src="/img/logo.png" alt="" width="100" ></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/Sanpham.html">Sản phẩm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Cửa hàng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Giới thiệu</a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="d-flex collapse navbar-collapse" id="navbarsExample10">
+                    <input class="me-2 w-75 rounded-pill form-control" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <a class="icon" href="#"><ion-icon class="nav-icon" name="cart-outline"></ion-icon></a>
+                    <a class="icon" href="/html/SignIn.html"><ion-icon name="person-circle-outline"></ion-icon></a>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <!-- <nav>
+        <div class="container d-flex">
+            <span>
+                <a href="index.html" class="nav-link/s">Trang Chủ</a>
+            </span>
+            <span>
+                Tất cả sản phẩm
+            </span>
+        </div>
+    </nav> -->
+    <main>
+        <div class="container py-5">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/img/slide1.jpg" class="w-100 img-fluid" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/slide2.jpg" class="w-100 img-fluid" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col-md-3">
+                        <div class="card shadow-sm">
+                            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                      role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                      <title>Placeholder</title>
+                      <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                        dy=".3em">Thumbnail</text>
+                    </svg> -->
+                            <a href="#">
+                                <img src="/img/sp1.jpeg" alt="" class="img-fluid">
+                            </a>
+
+                            <div class="card-body">
+                                <p class="card-text">Túi Degrey Trân Châu đường đen - TDDD</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-primary">Mua</button>
+                                        <button type="button" class="btn btn-sm btn-success">+<ion-icon class="nav-icon"
+                                                name="cart-outline"></ion-icon></button>
+                                    </div>
+                                    <small class="text-danger">320.000đ</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card shadow-sm">
+                            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em">Thumbnail</text>
+                            </svg> -->
+                            <a href="#">
+                                <img src="/img/sp2.jpeg" alt="" class="img-fluid">
+                            </a>
+                            <div class="card-body">
+                                <p class="card-text">Balo Degrey Drawstring Backpack - DSBP</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-primary">Mua</button>
+                                        <button type="button" class="btn btn-sm btn-success">+<ion-icon class="nav-icon"
+                                                name="cart-outline"></ion-icon></button>
+                                    </div>
+                                    <small class="text-danger">290.000đ</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card shadow-sm">
+                            <!--                       <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em">Thumbnail</text>
+                            </svg> -->
+                            <a href="#">
+                                <img src="/img/sp3.jpeg" alt="" class="img-fluid">
+                            </a>
+                            <div class="card-body">
+                                <p class="card-text">Madmonks Áo khoác Bomber Lông - JBB</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-primary">Mua</button>
+                                        <button type="button" class="btn btn-sm btn-success">+<ion-icon class="nav-icon"
+                                                name="cart-outline"></ion-icon></button>
+                                    </div>
+                                    <small class="text-danger">650.000đ</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card shadow-sm">
+                            <!--                       <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em">Thumbnail</text>
+                            </svg> -->
+
+                            <img src="/img/sp4.jpeg" alt="" class="img-fluid">
+                            </a>
+                            <div class="card-body">
+                                <p class="card-text">Quần Dù Túi Hộp Degrey - QTHHT - Đen</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-primary">Mua</button>
+                                        <button type="button" class="btn btn-sm btn-success">+<ion-icon class="nav-icon"
+                                                name="cart-outline"></ion-icon></button>
+                                    </div>
+                                    <small class="text-danger">520.000đ</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card shadow-sm">
+                            <!--                       <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em">Thumbnail</text>
+                            </svg> -->
+                            <a href="#">
+                                <img src="/img/sp5.jpeg" alt="" class="img-fluid">
+                            </a>
+                            <div class="card-body">
+                                <p class="card-text">Basic Backpack Degrey Trắng - BBD</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-primary">Mua</button>
+                                        <button type="button" class="btn btn-sm btn-success">+<ion-icon class="nav-icon"
+                                                name="cart-outline"></ion-icon></button>
+                                    </div>
+                                    <small class="text-danger">420.000đ</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card shadow-sm">
+                            <!--                       <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em">Thumbnail</text>
+                            </svg> -->
+                            <a href="#">
+                                <img src="/img/sp6.jpeg" alt="" class="img-fluid">
+                            </a>
+                            <div class="card-body">
+                                <p class="card-text">Degrey Backpack Grey - DBPGTN</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-primary">Mua</button>
+                                        <button type="button" class="btn btn-sm btn-success">+<ion-icon class="nav-icon"
+                                                name="cart-outline"></ion-icon></button>
+                                    </div>
+                                    <small class="text-danger">378.000đ</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card shadow-sm">
+                            <!--                       <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em">Thumbnail</text>
+                            </svg> -->
+                            <a href="#">
+                                <img src="/img/sp7.jpg" alt="" class="img-fluid">
+                            </a>
+                            <div class="card-body">
+                                <p class="card-text">Áo Thun Basic Degrey rêu - ATBD rêu</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-primary">Mua</button>
+                                        <button type="button" class="btn btn-sm btn-success">+<ion-icon class="nav-icon"
+                                                name="cart-outline"></ion-icon></button>
+                                    </div>
+                                    <small class="text-danger">190.000đ</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card shadow-sm">
+                            <!--                       <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em">Thumbnail</text>
+                            </svg> -->
+                            <a href="#">
+                                <img src="/img/sp8.jpg" alt="" class="img-fluid">
+                            </a>
+                            <div class="card-body">
+                                <p class="card-text">Áo Thun Basic Degrey Xám - ATBD Xám</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-primary">Mua</button>
+                                        <button type="button" class="btn btn-sm btn-success">+<ion-icon class="nav-icon"
+                                                name="cart-outline"></ion-icon></button>
+                                    </div>
+                                    <small class="text-danger">190.000đ</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- <footer class="text-muted py-5">
+        <div class="container">
+            <p class="float-end mb-1">
+                <a href="#">Back to top</a>
+            </p>
+            <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+            <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a
+                    href="../getting-started/introduction/">getting started guide</a>.</p>
+        </div>
+    </footer> -->
+    <footer class="container">
+        <div class="row">
+            <div class="col-12 col-md text-center">
+                <small class="d-block mb-3 text-muted"><img src="/img/logo.png" alt="" width="200"></small>
+            </div>
+            <div class="col-3 col-md">
+                <h5>Về chúng tôi</h5>
+                <ul class="list-unstyled text-small">
+                    <li>
+                        <span>
+                            Tên shop theo cảm hứng của chủ shop
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3 col-md">
+                <h5>Hỗ trợ khách hàng</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary" href="#">Hệ thống cửa hàng</a></li>
+                    <li><a class="link-secondary" href="#">Hướng dẫn đặt hàng</a></li>
+                    <li><a class="link-secondary" href="#">Chính sách và quy định</a></li>
+                    <li><a class="link-secondary" href="#">Thông tin sở hữu</a></li>
+                </ul>
+            </div>
+            <div class="col-3 col-md">
+                <h5>Chi nhánh</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary" href="#">Sài gòn</a></li>
+                    <li><a class="link-secondary" href="#">Đà lạt</a></li>
+                    <li><a class="link-secondary" href="#">Nha trang </a></li>
+                    <li><a class="link-secondary" href="#">Vũng tàu</a></li>
+                </ul>
+            </div>
+            <div class="col-3 col-md">
+                <h5>Chăm sóc khách hàng</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary" href="#"><ion-icon name="call-outline"></ion-icon> 090501590</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
